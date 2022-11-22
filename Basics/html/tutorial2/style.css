@@ -6,8 +6,9 @@ a {
     color:aliceblue;
     font-family:Calibri;
     position:relative;
-    left: 700px;
-    top: 400px;
+    left: 1250px;
+    top: 290px;
+    font-size: 8px;
 }
 
 img {
