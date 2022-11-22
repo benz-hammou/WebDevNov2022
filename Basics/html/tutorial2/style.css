@@ -1,0 +1,18 @@
+body {
+background-image: url(https://wallpaperaccess.com/full/404688.jpg);
+}
+
+a {
+    color:aliceblue;
+    font-family:Calibri;
+    position:relative;
+    left: 700px;
+    top: 400px;
+}
+
+img {
+    position:relative;
+    left: 1200px;
+    top: 580px;
+    scale: 40%;
+}
