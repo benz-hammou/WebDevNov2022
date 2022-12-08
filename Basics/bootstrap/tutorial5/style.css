@@ -26,3 +26,23 @@
 .customcolor{
     background-color:#d11212;
 }
+
+.custom_bg_exe{
+    background-color: #76a078;
+}
+
+html, body{
+    height:100vh;
+    width:100vw;
+}
+
+.p_input{
+    margin-bottom: 0;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* .exe1_button{
+     pas fini 
+    margin-bottom:  ;
+} */
