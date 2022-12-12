@@ -42,6 +42,9 @@ html, body{
     font-weight: bold;
 }
 
+.custom_size_exe1{
+    height: 80vh;
+}
 /* .exe1_button{
      pas fini 
     margin-bottom:  ;
