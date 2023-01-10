@@ -1,14 +1,20 @@
 /* Exercise 3 functions */
 
 // 1. Create a function called "add" that takes two arguments (parameters named "first" and "second") and returns their sum.
-
-
+function add (first, second){
+return first + second
+}
+console.log(add(1, 2));
 // 2. Create a function called "subtract" that takes two arguments (parameters named "first" and "second") and returns their difference.
-
-
+function subtract (first, second){
+    return first - second
+    }
+    console.log(subtract(1, 2));
 // 3. Create a function called "multiply" that takes two arguments and returns their product.
-
-
+function multiply (first, second){
+    return first * second
+    }
+    console.log(multiply(1, 2));
 // 4. Create a function called "divide" that takes two arguments and returns their quotient.
 
 
