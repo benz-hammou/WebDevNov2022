@@ -47,3 +47,25 @@ console.log(age);
 
 var firstname = "Michael "
 var lastname = "Jackson"
+
+
+// firstname +=lastname
+// var fullname = firstname+lastname; 
+// console.log(fullname)
+
+firstname+=lastname; // firstname = firstname + lastname
+
+console.log(firstname)
+
+var n1= 5;
+var n2=6;
+
+// var result = n1 + n2;
+
+n1+=n2; // n1 = n1 + n2
+console.log(n1)
+
+n1-=n2 // n1 = n1-n2 
+n1*=n2 // n1 = n1*n2
+n1/=n2 // n1 = n1/n2
+// 3*3 = 9 * 3 = 27

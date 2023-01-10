@@ -29,10 +29,15 @@ const personalINFO = {
     school: "Harvard University",
     age: 99,
     show: function() {
-        console.log(`gender: ${this.gender="male"} \nemail: ${this.email="moroud@live.ma"} \nage: ${this.age=28}`);
+        this.gender="male"
+        this.email="moroud@live.ma"
+        this.age=28
+        return {
+            gender:this.gender, email:this.email, age:this.age
+        }
     }
 }
 
-console.table(personalINFO);
-console.log(personalINFO);
-personalINFO.show()
+console.table(personalINFO.show());
+/* console.log(personalINFO);
+personalINFO.show() */
