@@ -58,4 +58,4 @@ function printDay(day) {
       return "What day do you want ?";
   }
 }
-console.log(printDay(6));
+console.log(printDay(2));
