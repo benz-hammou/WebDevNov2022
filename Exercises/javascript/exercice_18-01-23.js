@@ -1,7 +1,25 @@
-// 1. write a function that changes letters to utf-16
-// 2. write a function that converts utf-16 to letters
+// Exercises combine string and array methods
+// to solve puzzles.
 
-let letters = "abcdefghijklmnopqrstuvwxyz";
+// 1. write a function that changes letters to utf-16
+// Atilla example
+
+/* let letters = "abcdefghijklmnopqrstuvwxyz";
+// .charCodeAt() => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt
+function ConvertLettersToUtf16(str){ // 
+    // convert str data to arraylist
+    let arr = str.split("") // string method
+    const encoded= []
+    // loop the array forEach() // array method
+    arr.forEach(function(letter){
+        encoded.push(letter.charCodeAt())
+    })
+    return encoded
+}
+console.log(ConvertLettersToUtf16(letters)); */
+
+
+// 2. write a function that converts utf-16 to letters
 let msg = [
   70, 111, 108, 108, 111, 119, 32, 116, 104, 101, 32, 119, 104, 105, 116, 101,
   32, 114, 97, 98, 98, 105, 116, 46,
@@ -12,7 +30,7 @@ msg.forEach(function (value) {
 });
 
 // 3. write a function that adds a student to the students array and displays the students array
-const newStudent = {
+/* const newStudent = {
   full_name: "John Doe",
   age: 20,
   email: "johndoe@microsoft.com",
@@ -21,12 +39,14 @@ const newStudent = {
 };
 let students = [];
 
-students.push(newStudent);
-// Or
-function addStudent() {
-  return students.push(newStudent);
+function addStudent(arr) {
+  students.push(arr);
+  return students
 }
-/* console.log(students);
+
+let result = addStudent(newStudent)
+console.log(result);
+console.log(students);
 console.log(addStudent());  */
 
 // 4. write a function that encode a string to base64
@@ -46,15 +66,13 @@ console.log(stringToBase64()); */
 //DisplayArray(SortArray(ConvertStringToArray(names)))
 
 let names = "john, peter, mary, susan, john, mary";
-var arrayNames = names.replace(/,/g, "").split(' ')
 
-const btn = document.getElementById('btn')
-const output = document.getElementById('output')
-
-function ClickHandler(){
+/* function ClickHandler(){
+  var arrayNames = names.replace(/,/g, "").split(' ')
+  const output = document.getElementById('output')
     output.innerHTML=""
-    //alert(1)
+    alert("The list comming")
     arrayNames.forEach(function(name){
         output.innerHTML+=`<li>${name}</li>`
     })
-}
+} */
