@@ -38,7 +38,34 @@ function printDay(day) {
         return "What day do you want ?";
     }
   }
-  //console.log(printDay(2));
+
+  function printMonth(month) {
+    switch (month) {
+      case 1:
+        return "January";
+  
+      case 2:
+        return "February";
+  
+      case 3:
+        return "Tuesday";
+  
+      case 4:
+        return "Wednesday";
+  
+      case 5:
+        return "Thursday";
+  
+      case 6:
+        return "Friday";
+  
+      case 7:
+        return "Saturday";
+  
+      default:
+        return "What day do you want ?";
+    }
+  }
 
 console.log(printDay(date.getDay()))
 
