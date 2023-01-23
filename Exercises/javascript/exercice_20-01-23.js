@@ -121,7 +121,7 @@ election.forEach(function(item) {
     console.log(`${person_name} voted for politic party 3 `);
     return politic_party3++
   }
-  console.log(Math.max(politic_party1, politic_party3));
+  console.log(Math.max(politic_party1, politic_party2, politic_party3));
 })
 
 /* function electionA(arr) {
