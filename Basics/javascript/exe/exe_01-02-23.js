@@ -803,59 +803,63 @@ const people = [
 ]
 
 // 1. loop through the array and print out the name of each person
-for (let i = 0; i < people.length; i++ ) {
-    console.log(people[i].name); 
+for (let i = 0; i < people.length; i++) {
+    console.log(people[i].name);
 }
 // 2. loop through the array and print out the name and phone number of each person
-for (let i = 0; i < people.length; i++ ) {
-    const {name, phone} = people[i]
-    console.log(`Name: ${name}\nGSM: ${phone}`); 
+for (let i = 0; i < people.length; i++) {
+    const { name, phone } = people[i]
+    console.log(`Name: ${name}\nGSM: ${phone}`);
 }
 
 // 3. loop through the array and print out the name and address of each person
-for (let i = 0; i < people.length; i++ ) {
-    const {name, phone, address} = people[i]
-    console.log(`Name: ${name}\nAdresse: ${address}`); 
+for (let i = 0; i < people.length; i++) {
+    const { name, phone, address } = people[i]
+    console.log(`Name: ${name}\nAdresse: ${address}`);
 }
 
 // 4. loop through the array and print out the name and postalZip of each person
-for (let i = 0; i < people.length; i++ ) {
-    const {name, phone, address, postalZip} = people[i]
-    console.log(`Name: ${name}\npostalZip: ${postalZip}`); 
+for (let i = 0; i < people.length; i++) {
+    const { name, phone, address, postalZip } = people[i]
+    console.log(`Name: ${name}\npostalZip: ${postalZip}`);
 }
 
 // 5. loop through the array and print out the name and country of each person
-for (let i = 0; i < people.length; i++ ) {
-    const {name, phone, address, postalZip, country} = people[i]
-    console.log(`Name: ${name}\ncountry: ${country}`); 
+for (let i = 0; i < people.length; i++) {
+    const { name, phone, address, postalZip, country } = people[i]
+    console.log(`Name: ${name}\ncountry: ${country}`);
 }
 
 // 6. loop through the array and print out the name and region of each person
-for (let i = 0; i < people.length; i++ ) {
-    const {name, phone, address, postalZip, country, region} = people[i]
-    console.log(`Name: ${name}\nregion: ${region}`); 
+for (let i = 0; i < people.length; i++) {
+    const { name, phone, address, postalZip, country, region } = people[i]
+    console.log(`Name: ${name}\nregion: ${region}`);
 }
 
 // 7. loop through the array and print out the name and phone number of each person if the country is "Canada"
-for (let i = 0; i < people.length; i++ ) {
-    const {name, phone, address, postalZip, country, region} = people[i]
+for (let i = 0; i < people.length; i++) {
+    const { name, phone, address, postalZip, country, region } = people[i]
     country === "Canada" ? console.log(`Name: ${name}\nGSM: ${phone}`) : null
 }
 
 // 8. loop through the array and print out the name and phone number of each person if the country is "Canada" or "Mexico"
-for (let i = 0; i < people.length; i++ ) {
-    const {name, phone, address, postalZip, country, region} = people[i]
+for (let i = 0; i < people.length; i++) {
+    const { name, phone, address, postalZip, country, region } = people[i]
     country === "Canada" || country === "Mexico" ? console.log(`Name: ${name}\nGSM: ${phone}`) : null
 }
 
 // 9. loop through the array and print out the name and phone number of each person if the country is "Canada" or "Mexico" or "Ireland"
-for (let i = 0; i < people.length; i++ ) {
-    const {name, phone, address, postalZip, country, region} = people[i]
+for (let i = 0; i < people.length; i++) {
+    const { name, phone, address, postalZip, country, region } = people[i]
     country === "Canada" || country === "Mexico" || country === "Ireland" ? console.log(`Name: ${name}\nGSM: ${phone}`) : null
 }
 
 // 10. loop through the array and compare the postalZip of each person to the postalZip and print out the name and postalZip of each person if the postalZip is the same as the postalZip of the person in the array
-for (let i = 0; i < people.length; i++ ) {
-    const {name, phone, address, postalZip, country, region} = people[i]
-    postalZip === postalZip ? console.log(`Name: ${name}\npostalZip: ${postalZip}`) : null
+let found = []
+for (let i = 0; i < people.length; i++) {
+    let getData = people.filter( person =>{
+        return person.postalZip === people[i].postalZip
+    })
+    found = getData
 }
+console.log(found);
