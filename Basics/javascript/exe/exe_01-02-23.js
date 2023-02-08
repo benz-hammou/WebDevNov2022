@@ -857,9 +857,78 @@ for (let i = 0; i < people.length; i++) {
 // 10. loop through the array and compare the postalZip of each person to the postalZip and print out the name and postalZip of each person if the postalZip is the same as the postalZip of the person in the array
 let found = []
 for (let i = 0; i < people.length; i++) {
+    const { name, phone, address, postalZip, country, region } = people[i]
     let getData = people.filter( person =>{
-        return person.postalZip === people[i].postalZip
+        return person.postalZip === postalZip
     })
     found = getData
 }
 console.log(found);
+
+// Atilla Solutions 
+
+// 1. loop through the array and print out the name of each person
+// people.forEach(person=>{
+//     console.log(person.name)
+// })
+
+// 2. loop through the array and print out the name and phone number of each person
+// people.forEach(person=>{
+//     console.log(`Phone: ${person.phone}\nName: ${person.name}`)
+// })
+
+// 3. loop through the array and print out the name and address of each person
+// for(let x=0;x<people.length;x++){
+//     console.log(`name:${people[x].name}\naddress:${people[x].address}`)
+// }
+
+// 4. loop through the array and print out the name and postalZip of each person
+// for(let person of people){
+//     console.log(`Name:${person.name}\nPostalZip:${person.postalZip}`)
+// }
+
+// 5. loop through the array and print out the name and country of each person
+// people.map(person=>console.log(`Name:${person.name}\nCountry:${person.country}`))
+
+// 6. loop through the array and print out the name and region of each person
+// people.map(person=>console.log(`Name:${person.name}\nRegion:${person.region}`))
+
+// 7. loop through the array and print out the name and phone number of each person if the country is "Canada"
+// people.forEach(person=>{
+//     if(person.country==='Canada'){
+//         console.log(`Name:${person.name}\nPhone:${person.phone}`)
+//     }
+// })
+
+// 8. loop through the array and print out the name and phone number of each person if the country is "Canada" or "Mexico"
+// people.forEach(person=>{
+//     if(person.country==='Canada' || person.country==='Mexico'){
+//         console.log(`Name:${person.name}\nPhone:${person.phone}`)
+//     }
+// })
+
+
+// 9. loop through the array and print out the name and phone number of each person if the country is "Canada" or "Mexico" or "Ireland"
+// people.forEach(person=>{
+//     if(person.country==='Canada' || person.country==='Mexico' || person.country==='Ireland'){
+//         console.log(`Name:${person.name}\nPhone:${person.phone}`)
+//     }
+// })
+
+// for (let x = 0; x < people.length; x++) {
+//     if (people[x].country === 'Canada' || people[x].country === 'Mexico' || people[x].country === 'Ireland') {
+//         console.log(`Name:${people[x].name}\nPhone:${people[x].phone}`)
+//     }
+// }
+
+
+// 10. loop through the array and compare the postalZip of each person to the postalZip and print out the name and postalZip of each person if the postalZip is the same as the postalZip of the person in the array
+// let found=[]
+// for(let i=0;i<people.length;i++){
+//     let getData = people.filter(function(person){
+//         return person.postalZip === people[i].postalZip
+//     })
+//     found=getData
+// }
+
+// console.log(found)
