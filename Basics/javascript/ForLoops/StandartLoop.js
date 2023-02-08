@@ -715,14 +715,13 @@ for(let vote in VoteMachine){
   const voteObj = VoteMachine[vote].party_name// true or false
   
   if(voteObj === partyJim && VoteMachine[vote].vote ){ // true === "JimCarrey's FAncy Party"
-    
-      sum1++
-    
+      sum1++ 
   }
-  if(voteObj === partyNoMoney){ // true === "JimCarrey's FAncy Party"
-    if(VoteMachine[vote].vote){
+  if(voteObj === partyNoMoney && VoteMachine[vote].vote){ // true === "JimCarrey's FAncy Party"
       sum2++
-    }
+  }
+  if(voteObj === partyGeeks && VoteMachine[vote].vote){
+    sum3++
   }
  
 }
@@ -732,6 +731,7 @@ for(let vote in VoteMachine){
 
 console.log(sum1);
 console.log(sum2);
+console.log(sum3);
 
 
 // Atilla explanation
