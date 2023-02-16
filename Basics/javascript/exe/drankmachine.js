@@ -48,6 +48,7 @@ const MakeOrder = (drink, fastfood, sauces) => {
 const displayOrder = (order) => {
     console.log(`You ordered a ${order.drink}, ${order.fastfood} with ${order.sauces} and the total is ${order.total}€`);
 }
+
 displayOrder(MakeOrder("cola", "fries", "ketchup"))
 
 // find if Halal Food 
