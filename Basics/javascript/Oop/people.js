@@ -16,10 +16,10 @@ class Student extends{
     }
 }
 // End of Student class
-class Teacher {
+/* class Teacher {
     constructor(language){
         this.language = language
     }
-}
+} */
 
 // finish that exercice
