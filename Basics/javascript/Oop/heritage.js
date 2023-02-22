@@ -23,7 +23,7 @@ class Child extends Father{
         this.childname=childname
     }
     getAllInherits(){
-        console.log(super.FatherMessage())
+        super.FatherMessage()
     }
 }
 
@@ -38,11 +38,11 @@ class Child1 extends Father{
 }
 
 let app = new Child("Jimmy","Elon");
-app.getAllInherits()
-console.log(app)
-let childapp = new Child1('MichaelJordan')
+ app.getAllInherits()
+ console.log(app)
+ let childapp = new Child1('MichaelJordan')
 console.log(childapp)
-childapp.GetFatherMessage();
+ childapp.GetFatherMessage();
 /*
 Step 1 > use `extends` keyword to Parent class
 Step 2 > use super() to get inherits

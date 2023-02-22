@@ -24,8 +24,10 @@ class MachineLanguage extends Language{
 }
 
 let english = new HumanLanguage('english')
-console.log(english.name);
+console.log(english.display());
 let javascript = new MachineLanguage('Javascript', "Front-End")
 javascript.display()
 let python = new MachineLanguage('Python', 'Back-End')
 python.display()
+let lang = new Language('rif')
+lang.display()
