@@ -1,13 +1,15 @@
 /* Exercise math and date object */
 
 // 1. Create a variable called "date" that stores the current date.
-
+const date = new Date()
 // 2. Create a variable called "today" that stores the day of the week as a number (1-7).
-
+const today = date.getDay()+1
 // 3. Create a variable called "calendar" that stores a string that is the date, a dash, the day of the week, a dash, and the month concatenated together. For example, "2018-4-18".
-
+const calendar = `${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()}`
 // 4. Console log the variables you created in steps 1, 2, and 3.
-
+console.log(date);
+console.log(today);
+console.log(calendar);
 // 5. Create a function called "getDayName" that takes the day as a number and returns the day name as a string.
 
 
