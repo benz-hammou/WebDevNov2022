@@ -1,7 +1,7 @@
 /* http://testphp.vulnweb.com/login.php  */
 
-
-/* npmjs.com
+/* 
+npmjs.com
 command prompt
 > npm
 press enter
@@ -14,7 +14,6 @@ http://localhost:3000/database/2 > "/2" > url parameter
 "/database" > url param /param1/param2/param3
 "/database?title=value" url query
  */
-
 
 // use fetch to retrive data from internet(url)
 fetch('http://localhost:3000/database')
