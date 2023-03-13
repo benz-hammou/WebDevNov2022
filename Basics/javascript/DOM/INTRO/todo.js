@@ -33,7 +33,7 @@ const addTodo1 = document.querySelector('.btn.btn-danger')
 // querySelector or querySelectorAll (accepts css selector)
 
 
-const [addTodo,deleteAllTodos] = document.querySelectorAll('button')
+const [addTodo, deleteAllTodos] = document.querySelectorAll('button')
 
 const FirstForm = document.querySelector('.card-body > #todo-form')
 
@@ -45,9 +45,9 @@ const TodoItem = document.querySelector(".list-group-item")
 const clonedOfTodoItem1 = TodoItem.cloneNode(true)
 const clonedOfTodoItem2 = TodoItem.cloneNode()
 console.log(clonedOfTodoItem1.hasChildNodes(),
-clonedOfTodoItem2.hasChildNodes())
+    clonedOfTodoItem2.hasChildNodes())
 //clonedOfTodoItem1.childNodes[0].textContent = 'Javascript';
-clonedOfTodoItem1.firstChild.textContent="Javascript";
+clonedOfTodoItem1.firstChild.textContent = "Javascript";
 
 console.log(clonedOfTodoItem1.childNodes[0].textContent)
 ListOfTodos.appendChild(clonedOfTodoItem1)
@@ -60,7 +60,7 @@ Reactjs
 <a href = "#" class ="delete-item">
     <i class = "fa fa-remove"></i>
 </a>
-</li>`,'text/html')
+</li>`, 'text/html')
 
 // alternative way of parse domstring
 // createContextualFragment
@@ -80,26 +80,26 @@ console.log(parser)
 
 // ListOfTodos.append(RealNodeObject.body.firstChild)
 // ListOfTodos.append(parser1)
-ListOfTodos.append(RealNodeObject.body.firstChild,parser1)
+ListOfTodos.append(RealNodeObject.body.firstChild, parser1)
 
 // .style property
 
-ListOfTodos.lastElementChild.style.backgroundColor="tomato";
-ListOfTodos.lastElementChild.style.color="white"
+ListOfTodos.lastElementChild.style.backgroundColor = "tomato";
+ListOfTodos.lastElementChild.style.color = "white"
 
 // font size
 ListOfTodos.lastElementChild.style.fontSize
-="3em"
+    = "3em"
 console.log(ListOfTodos.lastElementChild.style)
 
 
 
-ListOfTodos.childNodes[ListOfTodos.childNodes.length-2].style.backgroundColor="cyan";
+ListOfTodos.childNodes[ListOfTodos.childNodes.length - 2].style.backgroundColor = "cyan";
 
-console.log(ListOfTodos.childNodes.length-2)
+console.log(ListOfTodos.childNodes.length - 2)
 
 // background-color: salmon; color:white;font-size: 3em;
-ListOfTodos.childNodes[ListOfTodos.childNodes.length-3].setAttribute('style','background-color: salmon; color:white;font-size: 3em;')
+ListOfTodos.childNodes[ListOfTodos.childNodes.length - 3].setAttribute('style', 'background-color: salmon; color:white;font-size: 3em;')
 
 console.log(ListOfTodos.lastElementChild)
 
@@ -119,7 +119,7 @@ console.log(ListOfTodos.lastElementChild)
 
 
 // usage: setInterval(callback,ms_time)
-const RemoveOneByOne = setInterval(()=>{
+/* const RemoveOneByOne = setInterval(()=>{
     console.log('this is interval')
     if(ListOfTodos.children.length>0){
         ListOfTodos.firstChild.remove()
@@ -128,4 +128,19 @@ const RemoveOneByOne = setInterval(()=>{
         clearInterval(RemoveOneByOne)
     }
 
-},2000)
+},2000) */
+
+
+// addEventListener() => to create html event ('click')
+// addEventListener('click', function)
+// event => object
+
+ListOfTodos.addEventListener('click', (event) => {
+    console.log('hello world', event.target.classList);
+    // event.target.remove()
+    console.log(event.target.parentElement.parentElement);
+    const isRemove = event.target.classList.contains('fa-remove')
+    if (isRemove) {
+        event.target.parentElement.parentElement.remove()
+    }
+})

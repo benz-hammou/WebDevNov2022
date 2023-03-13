@@ -31,7 +31,7 @@ fetch("http://localhost:3000/database")
         console.log(single_comment); // single object from the array
         CommentsList.innerHTML += `<div class="border rounded mb-2 d-flex justify-content-between" id="data_id">
         <li class="list-group-item border-0"><strong>${single_comment.username}:</strong> ${single_comment.comment}</li>
-        <button type="button" class="btn btn-outline-danger border-0" onclick="RemoveComment()">X</button>
+        <button type="button" class="btn btn-outline-danger border-0">X</button>
         </div>`;
     });
     console.log([allcomments]);
@@ -46,3 +46,6 @@ function RemoveComment() {
         console.log('data is deleted')
     })
 }
+
+
+CommentsList.addEventListener("click", RemoveComment)
