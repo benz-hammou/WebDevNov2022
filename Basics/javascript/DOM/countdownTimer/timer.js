@@ -1,5 +1,5 @@
 function Timer() {
-    var countDownDate = new Date("Mar 13, 2023 20:34:10").getTime()
+    var countDownDate = new Date("Mar 14, 2023 20:34:10").getTime()
     var now = new Date().getTime();
     var timeleft = countDownDate - now;
 
