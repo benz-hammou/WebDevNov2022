@@ -3,7 +3,7 @@ const AddTodoBtn = document.querySelector('.btn-danger')
 const listGroup = document.querySelector('.list-group')
 const deleteAllBtn = document.querySelector('#clear-todos')
 
-/* function MakeTemplate(todo) {
+function MakeTemplate(todo) {
     const parse = document.createRange().createContextualFragment(`<li class="list-group-item d-flex justify-content-between">
 ${todo}
 <a href = "#" class ="delete-item">
@@ -39,7 +39,7 @@ listGroup.addEventListener('click', function (event) {
 
 deleteAllBtn.addEventListener('click', () => {
     Array.from(listGroup.children).map(li => li.remove())
-})  */
+}) 
 
 
 

@@ -13,10 +13,14 @@ login.addEventListener('click', (e) => {
     // user data from db
     const userDB = JSON.parse(sessionStorage.getItem('user'))
 
+    let isUserFound = userDB.find(user=>user.username === userObj.username && user.password === userObj.password) 
+
+    console.log(isUserFound);
+
     Loading.innerText = "... please wait!"
 
     setTimeout(() => {
-        if (userObj.username === userDB.username && userObj.password === userDB.password) {
+        if (isUserFound) {
             alert('Welcome user, You are Logged in !')
             Loading.innerText = "Logged in!"
             Loading.classList.remove('text-light')
