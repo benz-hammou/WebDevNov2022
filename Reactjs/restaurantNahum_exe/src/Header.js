@@ -1,8 +1,16 @@
 import React from 'react'
+import NavMenu from './components/NavMenu'
 
-const Header = () => {
+const Header = ({navigation}) => {
   return (
-    <div>Header</div>
+    <div>
+      <div className="col-md-12 text-center  marb-35">
+        <h1 className="header-h">Menu las carnes del Nahum</h1>
+      </div>
+      <div className="col-md-12 text-center" id="menu-filters">
+        <NavMenu navigation={navigation}/>
+      </div>
+    </div>
   )
 }
 
