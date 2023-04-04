@@ -1,8 +1,14 @@
-import React from 'react'
+import NavbarMenu from "./navbar"
+import Navbar from 'react-bootstrap/Navbar';
+
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <div>
+      <Navbar bg="success" expand="lg">
+        <NavbarMenu />
+      </Navbar>
+    </div>
   )
 }
 
