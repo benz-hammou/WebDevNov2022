@@ -1,20 +1,20 @@
 console.log('helloooooo world');
 
-/* alert('jfdsnjsnljnsbnsrnbikjsqnbdjpns') */
+alert('jfdsnjsnljnsbnsrnbikjsqnbdjpns')
 
 console.log(6 + 9);
 
-// console.log('hellooooo world');
+console.log('hellooooo world');
 
-// alert('asdasdjasidiasjdisajdijasdio')
+alert('asdasdjasidiasjdisajdijasdio')
 
-// console.log("1"+1)
+console.log("1"+1)
 
-// console.log("hel"+"lo"+" world")
-// console.log(12/4)
-// console.log(12%5);
+console.log("hel"+"lo"+" world")
+console.log(12/4)
+console.log(12%5);
 
-// console.log(typeof 'hello');
+console.log(typeof 'hello');
 
 // variabletype variableName =  Value/Data
 

@@ -1,5 +1,5 @@
 var x=[1,2,3,4,5,6,7,8]
-var y=[2,3,4,5];
+var y=[2,3,3,3,3,4,5,5];
 var found=[]
 var random = [2,2,3,3,4,4,5,5,6,6]
 x.forEach(n1=>{
@@ -14,8 +14,9 @@ x.forEach(n1=>{
         }
     })
 })
+const uniqueFound = [new Set(...[found])]
+console.log(uniqueFound,'without duplication')
 
-console.log(found)
 console.log(new Set(...[random]))
 
 var n1=[1,2,3,4,5]
